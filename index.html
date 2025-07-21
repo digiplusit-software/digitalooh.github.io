@@ -1,1 +1,817 @@
-hello
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DigitalOOH.IO - India's AI-Powered Unified OOH/DOOH Platform</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        .gradient-bg { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+        .card-hover { transition: all 0.3s ease; }
+        .card-hover:hover { transform: translateY(-5px); box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1); }
+        .feature-card { background: linear-gradient(145deg, #f8fafc, #e2e8f0); }
+        .text-gradient { background: linear-gradient(135deg, #667eea, #764ba2); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .scroll-smooth { scroll-behavior: smooth; }
+        .animate-float { animation: float 6s ease-in-out infinite; }
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 scroll-smooth">
+    <!-- Header -->
+    <header class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-2">
+                    <div class="w-10 h-10 gradient-bg rounded-lg flex items-center justify-center">
+                        <i class="fas fa-broadcast-tower text-white text-lg"></i>
+                    </div>
+                    <span class="text-2xl font-bold text-gray-800">DigitalOOH.IO</span>
+                </div>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#platform" class="text-gray-600 hover:text-blue-600 transition duration-300">Platform</a>
+                    <a href="#features" class="text-gray-600 hover:text-blue-600 transition duration-300">Features</a>
+                    <a href="#solutions" class="text-gray-600 hover:text-blue-600 transition duration-300">Solutions</a>
+                    <a href="#competitive" class="text-gray-600 hover:text-blue-600 transition duration-300">Competitive Edge</a>
+                    <a href="#incentives" class="text-gray-600 hover:text-blue-600 transition duration-300">Early Access</a>
+                </nav>
+                <div class="flex space-x-4">
+                    <button class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition duration-300">
+                        <i class="fas fa-play mr-2"></i>Book Demo
+                    </button>
+                    <button class="border border-blue-600 text-blue-600 px-6 py-2 rounded-lg hover:bg-blue-50 transition duration-300">
+                        Start Free Trial
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="gradient-bg text-white py-20">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <h1 class="text-5xl font-bold leading-tight">
+                        India's First <span class="text-yellow-300">AI-Powered</span> Unified OOH/DOOH Platform
+                    </h1>
+                    <p class="text-xl text-blue-100">
+                        Revolutionizing outdoor advertising through intelligent automation, unified marketplace access, and transparent performance measurement for media owners, agencies, and brands.
+                    </p>
+                    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                        <button class="bg-yellow-400 text-gray-800 px-8 py-3 rounded-lg font-semibold hover:bg-yellow-300 transition duration-300">
+                            <i class="fas fa-rocket mr-2"></i>Start Your Journey
+                        </button>
+                        <button class="border border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-gray-800 transition duration-300">
+                            <i class="fas fa-play mr-2"></i>Watch Platform Demo
+                        </button>
+                    </div>
+                </div>
+                <div class="animate-float">
+                    <div class="bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-2xl p-8">
+                        <div class="grid grid-cols-2 gap-4 mb-6">
+                            <div class="bg-white bg-opacity-20 rounded-lg p-4 text-center">
+                                <div class="text-3xl font-bold">500K+</div>
+                                <div class="text-sm opacity-80">Inventory Sites</div>
+                            </div>
+                            <div class="bg-white bg-opacity-20 rounded-lg p-4 text-center">
+                                <div class="text-3xl font-bold">50+</div>
+                                <div class="text-sm opacity-80">Cities Covered</div>
+                            </div>
+                            <div class="bg-white bg-opacity-20 rounded-lg p-4 text-center">
+                                <div class="text-3xl font-bold">1000+</div>
+                                <div class="text-sm opacity-80">Media Partners</div>
+                            </div>
+                            <div class="bg-white bg-opacity-20 rounded-lg p-4 text-center">
+                                <div class="text-3xl font-bold">99.9%</div>
+                                <div class="text-sm opacity-80">Uptime SLA</div>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <i class="fas fa-chart-line text-6xl opacity-60"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Competitive Positioning Matrix -->
+    <section id="competitive" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-6">Competitive Positioning Matrix</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    See how DigitalOOH.IO leads the market with comprehensive platform capabilities and India-first approach
+                </p>
+            </div>
+            
+            <div class="bg-gray-50 rounded-2xl p-8 mb-12">
+                <div style="height: 600px;">
+                    <canvas id="competitiveChart"></canvas>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center p-6 bg-green-50 rounded-xl">
+                    <div class="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-trophy text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Market Leadership</h3>
+                    <p class="text-gray-600">First unified platform combining static + digital OOH with AI-powered intelligence</p>
+                </div>
+                <div class="text-center p-6 bg-blue-50 rounded-xl">
+                    <div class="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-brain text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">AI-First Approach</h3>
+                    <p class="text-gray-600">Advanced machine learning for campaign optimization and audience measurement</p>
+                </div>
+                <div class="text-center p-6 bg-purple-50 rounded-xl">
+                    <div class="w-16 h-16 bg-purple-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-flag-usa text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">India Specialization</h3>
+                    <p class="text-gray-600">Built specifically for Indian market with local compliance and multilingual support</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Detailed Product Features -->
+    <section id="features" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-6">Platform Features Overview</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Comprehensive suite of tools designed to streamline, optimize, and measure OOH advertising campaigns
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-8">
+                <!-- Unified Marketplace -->
+                <div class="feature-card rounded-xl p-8 card-hover">
+                    <div class="w-16 h-16 gradient-bg rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-store text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Unified Marketplace</h3>
+                    <p class="text-gray-600 mb-6">Single searchable database of 500,000+ OOH/DOOH sites across India</p>
+                    <ul class="space-y-3 text-sm text-gray-600">
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Real-time inventory availability</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Dynamic pricing engine</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Geographic & demographic filtering</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Quality scoring & verification</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Transit, airport & mall networks</li>
+                    </ul>
+                </div>
+
+                <!-- AI-Powered Planner -->
+                <div class="feature-card rounded-xl p-8 card-hover">
+                    <div class="w-16 h-16 gradient-bg rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-robot text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">AI-Powered Planner (Smart DSP)</h3>
+                    <p class="text-gray-600 mb-6">Intelligent demand-side platform with predictive optimization</p>
+                    <ul class="space-y-3 text-sm text-gray-600">
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Budget allocation optimization</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Audience behavior prediction</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Site recommendation engine</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Performance forecasting</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Cross-channel attribution</li>
+                    </ul>
+                </div>
+
+                <!-- Robust SSP -->
+                <div class="feature-card rounded-xl p-8 card-hover">
+                    <div class="w-16 h-16 gradient-bg rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-chart-line text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Robust Media Owner Console (SSP)</h3>
+                    <p class="text-gray-600 mb-6">Supply-side platform for yield optimization and revenue maximization</p>
+                    <ul class="space-y-3 text-sm text-gray-600">
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Automated yield optimization</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Revenue forecasting</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Inventory management tools</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Performance analytics dashboard</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Automated billing & reporting</li>
+                    </ul>
+                </div>
+
+                <!-- Real-time Bidding -->
+                <div class="feature-card rounded-xl p-8 card-hover">
+                    <div class="w-16 h-16 gradient-bg rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-bolt text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Real-time Bidding & Pricing</h3>
+                    <p class="text-gray-600 mb-6">Sub-100ms bidding engine with programmatic capabilities</p>
+                    <ul class="space-y-3 text-sm text-gray-600">
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Programmatic auction system</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Dynamic bid optimization</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Budget pacing algorithms</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Fraud detection & prevention</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Brand safety controls</li>
+                    </ul>
+                </div>
+
+                <!-- Real-time Analytics -->
+                <div class="feature-card rounded-xl p-8 card-hover">
+                    <div class="w-16 h-16 gradient-bg rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-analytics text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Real-time Analytics</h3>
+                    <p class="text-gray-600 mb-6">Live performance monitoring with actionable insights</p>
+                    <ul class="space-y-3 text-sm text-gray-600">
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Live campaign performance tracking</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Audience engagement metrics</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>ROI calculation & optimization</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Custom dashboard creation</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Automated alert system</li>
+                    </ul>
+                </div>
+
+                <!-- AI/ML Measurement -->
+                <div class="feature-card rounded-xl p-8 card-hover">
+                    <div class="w-16 h-16 gradient-bg rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-eye text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">AI/ML-Powered Measurement</h3>
+                    <p class="text-gray-600 mb-6">Computer vision and machine learning for accurate audience measurement</p>
+                    <ul class="space-y-3 text-sm text-gray-600">
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Computer vision audience counting</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Demographic analysis (age, gender)</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Attention measurement & dwell time</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Privacy-compliant processing</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Third-party verification</li>
+                    </ul>
+                </div>
+
+                <!-- Advanced CMS -->
+                <div class="feature-card rounded-xl p-8 card-hover">
+                    <div class="w-16 h-16 gradient-bg rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-edit text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Advanced CMS for Creative Content</h3>
+                    <p class="text-gray-600 mb-6">Comprehensive content management with approval workflows</p>
+                    <ul class="space-y-3 text-sm text-gray-600">
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Multi-format asset support</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Automated transcoding</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Brand safety verification</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Approval workflow management</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Version control & asset tracking</li>
+                    </ul>
+                </div>
+
+                <!-- Omni-channel Attribution -->
+                <div class="feature-card rounded-xl p-8 card-hover">
+                    <div class="w-16 h-16 gradient-bg rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-link text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Omni-channel Attribution</h3>
+                    <p class="text-gray-600 mb-6">Cross-channel attribution connecting OOH to digital conversions</p>
+                    <ul class="space-y-3 text-sm text-gray-600">
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Mobile attribution tracking</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Foot traffic analysis</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Online conversion measurement</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Multi-touch attribution modeling</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Brand lift studies</li>
+                    </ul>
+                </div>
+
+                <!-- Smart Reporting -->
+                <div class="feature-card rounded-xl p-8 card-hover">
+                    <div class="w-16 h-16 gradient-bg rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-chart-pie text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Smart Reporting for All Parties</h3>
+                    <p class="text-gray-600 mb-6">Automated reporting tailored for different stakeholder needs</p>
+                    <ul class="space-y-3 text-sm text-gray-600">
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Stakeholder-specific dashboards</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Automated report generation</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>White-label reporting options</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>API access for integrations</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Custom KPI tracking</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How DigitalOOH.IO Helps Different Stakeholders -->
+    <section id="solutions" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-6">How DigitalOOH.IO Transforms Your Business</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Tailored solutions for every stakeholder in the OOH advertising ecosystem
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 mb-16">
+                <!-- For Brands -->
+                <div class="bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl p-8 card-hover">
+                    <div class="w-20 h-20 bg-blue-500 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-bullhorn text-white text-3xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">For Brands</h3>
+                    <ul class="space-y-4 text-gray-700">
+                        <li class="flex items-start">
+                            <i class="fas fa-arrow-right text-blue-500 mr-3 mt-1"></i>
+                            <div>
+                                <strong>Unified Campaign Management:</strong> Plan and execute national campaigns from a single dashboard
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-arrow-right text-blue-500 mr-3 mt-1"></i>
+                            <div>
+                                <strong>Transparent ROI Measurement:</strong> Track every impression to conversion with AI-powered attribution
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-arrow-right text-blue-500 mr-3 mt-1"></i>
+                            <div>
+                                <strong>Cost Efficiency:</strong> 25% average cost savings through optimized buying and reduced intermediaries
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-arrow-right text-blue-500 mr-3 mt-1"></i>
+                            <div>
+                                <strong>Real-time Optimization:</strong> Dynamic campaign adjustments based on performance data
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- For Media Owners -->
+                <div class="bg-gradient-to-br from-green-50 to-green-100 rounded-2xl p-8 card-hover">
+                    <div class="w-20 h-20 bg-green-500 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-broadcast-tower text-white text-3xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">For Media Owners</h3>
+                    <ul class="space-y-4 text-gray-700">
+                        <li class="flex items-start">
+                            <i class="fas fa-arrow-right text-green-500 mr-3 mt-1"></i>
+                            <div>
+                                <strong>Revenue Optimization:</strong> 20% average revenue increase through AI-powered yield optimization
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-arrow-right text-green-500 mr-3 mt-1"></i>
+                            <div>
+                                <strong>National Exposure:</strong> Connect inventory to brands and agencies across India
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-arrow-right text-green-500 mr-3 mt-1"></i>
+                            <div>
+                                <strong>Automated Operations:</strong> 60% reduction in manual workload with automated systems
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-arrow-right text-green-500 mr-3 mt-1"></i>
+                            <div>
+                                <strong>Data-driven Insights:</strong> Performance analytics for portfolio optimization and pricing
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- For Agencies -->
+                <div class="bg-gradient-to-br from-purple-50 to-purple-100 rounded-2xl p-8 card-hover">
+                    <div class="w-20 h-20 bg-purple-500 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-users text-white text-3xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">For Ad Agencies</h3>
+                    <ul class="space-y-4 text-gray-700">
+                        <li class="flex items-start">
+                            <i class="fas fa-arrow-right text-purple-500 mr-3 mt-1"></i>
+                            <div>
+                                <strong>Streamlined Workflow:</strong> 40% time savings with integrated planning, buying, and reporting
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-arrow-right text-purple-500 mr-3 mt-1"></i>
+                            <div>
+                                <strong>White-label Solutions:</strong> Branded platform options for client management and private deals
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-arrow-right text-purple-500 mr-3 mt-1"></i>
+                            <div>
+                                <strong>Enhanced Client Value:</strong> Advanced analytics and attribution to demonstrate campaign effectiveness
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-arrow-right text-purple-500 mr-3 mt-1"></i>
+                            <div>
+                                <strong>Scalable Operations:</strong> Handle more campaigns with the same team size
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Campaign Workflow -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-6">Easy Campaign Management Workflow</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Streamlined process from planning to measurement in just a few simple steps
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="w-20 h-20 gradient-bg rounded-full flex items-center justify-center mx-auto mb-6">
+                        <span class="text-2xl font-bold text-white">1</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Plan & Discover</h3>
+                    <p class="text-gray-600">Search inventory, get AI recommendations, and plan your campaign with predictive analytics</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-20 h-20 gradient-bg rounded-full flex items-center justify-center mx-auto mb-6">
+                        <span class="text-2xl font-bold text-white">2</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Book & Execute</h3>
+                    <p class="text-gray-600">Book inventory, upload creatives, and launch campaigns with automated approval workflows</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-20 h-20 gradient-bg rounded-full flex items-center justify-center mx-auto mb-6">
+                        <span class="text-2xl font-bold text-white">3</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Monitor & Optimize</h3>
+                    <p class="text-gray-600">Track real-time performance, get optimization suggestions, and adjust campaigns on the fly</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-20 h-20 gradient-bg rounded-full flex items-center justify-center mx-auto mb-6">
+                        <span class="text-2xl font-bold text-white">4</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Measure & Report</h3>
+                    <p class="text-gray-600">Get comprehensive reports with attribution data and performance insights for all stakeholders</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Driven Services -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-6">AI Driven Services</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Advanced artificial intelligence and machine learning capabilities built into every aspect of the platform
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gradient-to-br from-indigo-50 to-indigo-100 rounded-xl p-6 card-hover">
+                    <i class="fas fa-brain text-4xl text-indigo-600 mb-4"></i>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Predictive Campaign Optimization</h3>
+                    <p class="text-gray-600">ML models forecast performance and optimize budget allocation across inventory types</p>
+                </div>
+                <div class="bg-gradient-to-br from-pink-50 to-pink-100 rounded-xl p-6 card-hover">
+                    <i class="fas fa-eye text-4xl text-pink-600 mb-4"></i>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Computer Vision Analytics</h3>
+                    <p class="text-gray-600">Real-time audience measurement, demographic analysis, and attention tracking</p>
+                </div>
+                <div class="bg-gradient-to-br from-teal-50 to-teal-100 rounded-xl p-6 card-hover">
+                    <i class="fas fa-lightbulb text-4xl text-teal-600 mb-4"></i>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Smart Recommendations</h3>
+                    <p class="text-gray-600">AI-powered suggestions for optimal site selection and media mix optimization</p>
+                </div>
+                <div class="bg-gradient-to-br from-orange-50 to-orange-100 rounded-xl p-6 card-hover">
+                    <i class="fas fa-chart-line text-4xl text-orange-600 mb-4"></i>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Dynamic Pricing Engine</h3>
+                    <p class="text-gray-600">Real-time pricing optimization based on demand, seasonality, and performance data</p>
+                </div>
+                <div class="bg-gradient-to-br from-purple-50 to-purple-100 rounded-xl p-6 card-hover">
+                    <i class="fas fa-shield-alt text-4xl text-purple-600 mb-4"></i>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Fraud Detection</h3>
+                    <p class="text-gray-600">Advanced anomaly detection for ad verification and brand safety protection</p>
+                </div>
+                <div class="bg-gradient-to-br from-red-50 to-red-100 rounded-xl p-6 card-hover">
+                    <i class="fas fa-magic text-4xl text-red-600 mb-4"></i>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Dynamic Creative Optimization</h3>
+                    <p class="text-gray-600">Context-aware creative personalization and automated A/B testing</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Early Adopter Incentives -->
+    <section id="incentives" class="py-20 gradient-bg text-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-6">Unlock the Future of OOH Advertising with DigitalOOH.IO</h2>
+                <p class="text-xl text-blue-100 max-w-4xl mx-auto">
+                    Welcome to <strong>DigitalOOH.IO</strong>, the cutting-edge AI-powered platform that is revolutionizing the world of Out-of-Home (OOH) and Digital Out-Of-Home (DOOH) advertising. We're here to help media owners, advertising agencies, and brands connect, collaborate, and optimize their campaigns like never before. And the best part? As an early adopter, you'll get <strong>exclusive incentives</strong> that make getting started not only easy but incredibly rewarding.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 mb-16">
+                <!-- For Media Owners -->
+                <div class="bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-2xl p-8">
+                    <div class="text-center mb-6">
+                        <div class="w-20 h-20 bg-yellow-400 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-broadcast-tower text-gray-800 text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-2">For Media Owners</h3>
+                        <div class="text-yellow-300 font-semibold text-lg">Priority Listing + 6 Months Free Trial</div>
+                    </div>
+                    <p class="text-blue-100 mb-6">
+                        Are you ready to take your media inventory to the next level? At <strong>DigitalOOH.IO</strong>, we believe in giving media owners the tools and visibility they deserve.
+                    </p>
+                    <ul class="space-y-3 text-sm text-blue-100 mb-6">
+                        <li class="flex items-center"><i class="fas fa-star text-yellow-400 mr-3"></i>Priority Listing in nationwide marketplace</li>
+                        <li class="flex items-center"><i class="fas fa-star text-yellow-400 mr-3"></i>6 months FREE platform access</li>
+                        <li class="flex items-center"><i class="fas fa-star text-yellow-400 mr-3"></i>Real-time inventory management</li>
+                        <li class="flex items-center"><i class="fas fa-star text-yellow-400 mr-3"></i>Dynamic pricing & AI optimization</li>
+                        <li class="flex items-center"><i class="fas fa-star text-yellow-400 mr-3"></i>Hands-on onboarding support</li>
+                    </ul>
+                    <button class="w-full bg-yellow-400 text-gray-800 py-3 rounded-lg font-semibold hover:bg-yellow-300 transition duration-300">
+                        Claim Your Spot
+                    </button>
+                </div>
+
+                <!-- For Agencies -->
+                <div class="bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-2xl p-8">
+                    <div class="text-center mb-6">
+                        <div class="w-20 h-20 bg-yellow-400 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-users text-gray-800 text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-2">For Advertising Agencies</h3>
+                        <div class="text-yellow-300 font-semibold text-lg">Exclusive Access + Early Campaign Credits</div>
+                    </div>
+                    <p class="text-blue-100 mb-6">
+                        As a leading advertising agency, you understand the importance of staying ahead of the curve. <strong>DigitalOOH.IO</strong> is the perfect platform to optimize your campaigns.
+                    </p>
+                    <ul class="space-y-3 text-sm text-blue-100 mb-6">
+                        <li class="flex items-center"><i class="fas fa-star text-yellow-400 mr-3"></i>Exclusive access to advanced features</li>
+                        <li class="flex items-center"><i class="fas fa-star text-yellow-400 mr-3"></i>Discounted fees for first campaigns</li>
+                        <li class="flex items-center"><i class="fas fa-star text-yellow-400 mr-3"></i>AI-powered audience targeting</li>
+                        <li class="flex items-center"><i class="fas fa-star text-yellow-400 mr-3"></i>Predictive analytics & optimization</li>
+                        <li class="flex items-center"><i class="fas fa-star text-yellow-400 mr-3"></i>White-label platform options</li>
+                    </ul>
+                    <button class="w-full bg-yellow-400 text-gray-800 py-3 rounded-lg font-semibold hover:bg-yellow-300 transition duration-300">
+                        Get Early Access
+                    </button>
+                </div>
+
+                <!-- For Brands -->
+                <div class="bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-2xl p-8">
+                    <div class="text-center mb-6">
+                        <div class="w-20 h-20 bg-yellow-400 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-bullhorn text-gray-800 text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-2">For Brands</h3>
+                        <div class="text-yellow-300 font-semibold text-lg">Exclusive Discounts + Free Insights</div>
+                    </div>
+                    <p class="text-blue-100 mb-6">
+                        For brands looking to make a lasting impact, <strong>DigitalOOH.IO</strong> offers a game-changing platform to deliver your message to the right audience at the right time.
+                    </p>
+                    <ul class="space-y-3 text-sm text-blue-100 mb-6">
+                        <li class="flex items-center"><i class="fas fa-star text-yellow-400 mr-3"></i>Exclusive campaign discounts</li>
+                        <li class="flex items-center"><i class="fas fa-star text-yellow-400 mr-3"></i>Free audience analysis & insights</li>
+                        <li class="flex items-center"><i class="fas fa-star text-yellow-400 mr-3"></i>AI-driven campaign optimization</li>
+                        <li class="flex items-center"><i class="fas fa-star text-yellow-400 mr-3"></i>Real-time performance tracking</li>
+                        <li class="flex items-center"><i class="fas fa-star text-yellow-400 mr-3"></i>Transparent ROI measurement</li>
+                    </ul>
+                    <button class="w-full bg-yellow-400 text-gray-800 py-3 rounded-lg font-semibold hover:bg-yellow-300 transition duration-300">
+                        Start Campaign
+                    </button>
+                </div>
+            </div>
+
+            <div class="bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-2xl p-8 mb-12">
+                <h3 class="text-3xl font-bold text-center mb-8">Exclusive Incentives for All Users</h3>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="text-center">
+                        <i class="fas fa-network-wired text-4xl text-yellow-400 mb-4"></i>
+                        <h4 class="text-xl font-bold mb-3">Networking & Business Development</h4>
+                        <p class="text-blue-100">Access to exclusive events and networking opportunities with leading industry players</p>
+                    </div>
+                    <div class="text-center">
+                        <i class="fas fa-rocket text-4xl text-yellow-400 mb-4"></i>
+                        <h4 class="text-xl font-bold mb-3">First-Mover Advantage</h4>
+                        <p class="text-blue-100">Early access to cutting-edge features and capabilities that set you apart in the OOH space</p>
+                    </div>
+                    <div class="text-center">
+                        <i class="fas fa-flask text-4xl text-yellow-400 mb-4"></i>
+                        <h4 class="text-xl font-bold mb-3">Exclusive Beta Features</h4>
+                        <p class="text-blue-100">Test new tools, provide feedback, and help shape the future of DigitalOOH.IO</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <h3 class="text-3xl font-bold mb-6">Join the Revolution Today</h3>
+                <p class="text-xl text-blue-100 mb-8 max-w-4xl mx-auto">
+                    At <strong>DigitalOOH.IO</strong>, we are building the future of Out-of-Home advertising, and we want <strong>you</strong> to be a part of it. Our platform is designed to streamline your workflow, optimize campaign results, and unlock new revenue opportunities—whether you're a <strong>media owner</strong>, <strong>advertising agency</strong>, or <strong>brand</strong>.
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
+                    <button class="bg-yellow-400 text-gray-800 px-8 py-4 rounded-lg font-bold text-lg hover:bg-yellow-300 transition duration-300">
+                        <i class="fas fa-rocket mr-2"></i>Start Your Journey Now
+                    </button>
+                    <button class="border-2 border-yellow-400 text-yellow-400 px-8 py-4 rounded-lg font-bold text-lg hover:bg-yellow-400 hover:text-gray-800 transition duration-300">
+                        <i class="fas fa-calendar mr-2"></i>Schedule Demo
+                    </button>
+                </div>
+                <p class="text-blue-200 mt-6 text-lg">
+                    <strong>Start your journey with DigitalOOH.IO now. Together, we'll shape the future of Out-of-Home advertising!</strong>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div class="w-8 h-8 gradient-bg rounded-lg flex items-center justify-center">
+                            <i class="fas fa-broadcast-tower text-white text-sm"></i>
+                        </div>
+                        <span class="text-xl font-bold text-white">DigitalOOH.IO</span>
+                    </div>
+                    <p class="text-gray-400 mb-4">India's first AI-powered unified OOH/DOOH advertising platform revolutionizing outdoor advertising.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300"><i class="fab fa-linkedin text-xl"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300"><i class="fab fa-twitter text-xl"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300"><i class="fab fa-facebook text-xl"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-4">Platform</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="hover:text-white transition duration-300">Unified Marketplace</a></li>
+                        <li><a href="#" class="hover:text-white transition duration-300">AI-Powered DSP</a></li>
+                        <li><a href="#" class="hover:text-white transition duration-300">Smart SSP</a></li>
+                        <li><a href="#" class="hover:text-white transition duration-300">Analytics & Reporting</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-4">Solutions</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="hover:text-white transition duration-300">For Brands</a></li>
+                        <li><a href="#" class="hover:text-white transition duration-300">For Media Owners</a></li>
+                        <li><a href="#" class="hover:text-white transition duration-300">For Agencies</a></li>
+                        <li><a href="#" class="hover:text-white transition duration-300">White-label Solutions</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-4">Company</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="hover:text-white transition duration-300">About Us</a></li>
+                        <li><a href="#" class="hover:text-white transition duration-300">Contact</a></li>
+                        <li><a href="#" class="hover:text-white transition duration-300">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-white transition duration-300">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center">
+                <p>&copy; 2024 DigitalOOH.IO. All rights reserved. Transforming India's outdoor advertising ecosystem.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Competitive Chart
+        const ctx = document.getElementById('competitiveChart').getContext('2d');
+        new Chart(ctx, {
+            type: 'bubble',
+            data: {
+                datasets: [{
+                    label: 'DigitalOOH.IO',
+                    data: [{ x: 95, y: 90, r: 25 }],
+                    backgroundColor: 'rgba(102, 126, 234, 0.8)',
+                    borderColor: 'rgba(102, 126, 234, 1)',
+                    borderWidth: 2
+                }, {
+                    label: 'Vistar Media',
+                    data: [{ x: 85, y: 30, r: 20 }],
+                    backgroundColor: 'rgba(239, 68, 68, 0.6)',
+                    borderColor: 'rgba(239, 68, 68, 1)',
+                    borderWidth: 1
+                }, {
+                    label: 'Broadsign',
+                    data: [{ x: 80, y: 25, r: 18 }],
+                    backgroundColor: 'rgba(245, 158, 11, 0.6)',
+                    borderColor: 'rgba(245, 158, 11, 1)',
+                    borderWidth: 1
+                }, {
+                    label: 'Hivestack',
+                    data: [{ x: 75, y: 35, r: 15 }],
+                    backgroundColor: 'rgba(16, 185, 129, 0.6)',
+                    borderColor: 'rgba(16, 185, 129, 1)',
+                    borderWidth: 1
+                }, {
+                    label: 'Moving Walls',
+                    data: [{ x: 65, y: 70, r: 12 }],
+                    backgroundColor: 'rgba(139, 92, 246, 0.6)',
+                    borderColor: 'rgba(139, 92, 246, 1)',
+                    borderWidth: 1
+                }, {
+                    label: 'AdOnMo',
+                    data: [{ x: 45, y: 85, r: 10 }],
+                    backgroundColor: 'rgba(236, 72, 153, 0.6)',
+                    borderColor: 'rgba(236, 72, 153, 1)',
+                    borderWidth: 1
+                }, {
+                    label: 'Lemma',
+                    data: [{ x: 55, y: 75, r: 8 }],
+                    backgroundColor: 'rgba(6, 182, 212, 0.6)',
+                    borderColor: 'rgba(6, 182, 212, 1)',
+                    borderWidth: 1
+                }, {
+                    label: 'Times OOH',
+                    data: [{ x: 30, y: 90, r: 22 }],
+                    backgroundColor: 'rgba(107, 114, 128, 0.6)',
+                    borderColor: 'rgba(107, 114, 128, 1)',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    title: {
+                        display: true,
+                        text: 'Platform Capabilities vs India Market Presence',
+                        font: { size: 18, weight: 'bold' }
+                    },
+                    legend: {
+                        position: 'bottom',
+                        labels: { padding: 20, usePointStyle: true }
+                    },
+                    tooltip: {
+                        callbacks: {
+                            label: function(context) {
+                                return context.dataset.label + ': Technology (' + context.parsed.x + 
+                                       '), India Presence (' + context.parsed.y + 
+                                       '), Market Share (' + context.parsed.r + ')';
+                            }
+                        }
+                    }
+                },
+                scales: {
+                    x: {
+                        display: true,
+                        title: { display: true, text: 'Technology & Platform Capabilities →', font: { size: 14, weight: 'bold' } },
+                        min: 0, max: 100,
+                        grid: { color: 'rgba(0,0,0,0.1)' }
+                    },
+                    y: {
+                        display: true,
+                        title: { display: true, text: 'India Market Presence →', font: { size: 14, weight: 'bold' } },
+                        min: 0, max: 100,
+                        grid: { color: 'rgba(0,0,0,0.1)' }
+                    }
+                }
+            }
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Add scroll effects
+        window.addEventListener('scroll', () => {
+            const cards = document.querySelectorAll('.card-hover');
+            cards.forEach(card => {
+                const rect = card.getBoundingClientRect();
+                if (rect.top < window.innerHeight * 0.8) {
+                    card.style.opacity = '1';
+                    card.style.transform = 'translateY(0)';
+                }
+            });
+        });
+
+        // Initialize cards with fade-in effect
+        document.addEventListener('DOMContentLoaded', () => {
+            const cards = document.querySelectorAll('.card-hover');
+            cards.forEach((card, index) => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(20px)';
+                card.style.transition = 'all 0.6s ease';
+                setTimeout(() => {
+                    card.style.opacity = '1';
+                    card.style.transform = 'translateY(0)';
+                }, index * 100);
+            });
+        });
+    </script>
+</body>
+</html>
